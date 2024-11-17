@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arduino Sensor Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Project Magang Kelompok 1</h1>
+        <p>Explore my Arduino projects using temperature and motion sensors!</p>
+    </header>
+
+    <main>
+        <section class="project-section">
+            <h2>Arduino Projects</h2>
+            <div class="projects-container">
+                <!-- Project 1: Temperature Sensor (DHT11) -->
+                <div class="project-card">
+                    <h3>Temperature Sensor (DHT11)</h3>
+                    <img src="40.jfif" alt="DHT11 Sensor Project" class="project-img">
+                    <p>Uses a DHT11 sensor to measure temperature and humidity. The readings are displayed on the serial monitor.</p>
+                    <button onclick="showCode('code1')">View Code</button>
+                    <pre id="code1" class="code-snippet">
+        #include <DHT.h>
+
+        #define DHTPIN 2
+        #define DHTTYPE DHT11
+        DHT dht(DHTPIN, DHTTYPE);
+
+        void setup() {
+          Serial.begin(9600);
+          dht.begin();
+        }
+
+        void loop() {
+          float temperature = dht.readTemperature();
+          float humidity = dht.readHumidity();
+
+          if (isnan(temperature) || isnan(humidity)) {
+            Serial.println("Failed to read from DHT sensor!");
+            return;
+          }
+
+          Serial.print("Temperature: ");
+          Serial.print(temperature);
+          Serial.print("°C  Humidity: ");
+          Serial.print(humidity);
+          Serial.println("%");
+          delay(2000);
+        }
+                    </pre>
+                </div>
+
+                <!-- Project 2: Ultrasonic Sensor (HC-SR04) -->
+                <div class="project-card">
+                    <h3>Ultrasonic Sensor (HC-SR04)</h3>
+                    <img src="41.jfif" alt="Ultrasonic Sensor Project" class="project-img">
+                    <p>Uses an HC-SR04 ultrasonic sensor to measure distance to objects.</p>
+                    <button onclick="showCode('code2')">View Code</button>
+                    <pre id="code2" class="code-snippet">
+        #define TRIG_PIN 9
+        #define ECHO_PIN 10
+
+        void setup() {
+          Serial.begin(9600);
+          pinMode(TRIG_PIN, OUTPUT);
+          pinMode(ECHO_PIN, INPUT);
+        }
+
+        void loop() {
+          long duration, distance;
+          
+          digitalWrite(TRIG_PIN, LOW);
+          delayMicroseconds(2);
+          digitalWrite(TRIG_PIN, HIGH);
+          delayMicroseconds(10);
+          digitalWrite(TRIG_PIN, LOW);
+          
+          duration = pulseIn(ECHO_PIN, HIGH);
+          distance = duration * 0.034 / 2;
+
+          Serial.print("Distance: ");
+          Serial.print(distance);
+          Serial.println(" cm");
+          delay(1000);
+        }
+                    </pre>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="live-data-section">
+            <h2>Live Sensor Data</h2>
+            <button onclick="connectToSerial()">Connect to Arduino</button>
+            <div id="sensor-output"></div>
+        </section>
+
+                <!-- Team Members Table -->
+        <section class="team-section">
+            <h2>Team Members</h2>
+            <table class="team-table">
+                <tr>
+                    <th>Name</th>
+                    <th>Role</th>
+                </tr>
+                <tr>
+                    <td>Fikri Maulana</td>
+                    <td>Project Leader</td>
+                </tr>
+                <tr>
+                    <td>Ahmad Aqila Nubala</td>
+                    <td>Arduino Developer</td>
+                </tr>
+                <tr>
+                    <td>Annisa Mulya Amaliyah</td>
+                    <td>Flowchart Developer</td>
+                </tr>
+                <tr>
+                    <td>Indra Kurniawan Cahyadi</td>
+                    <td>Web Developer</td>
+                </tr>
+            </table>
+        </section>
+
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+    <s

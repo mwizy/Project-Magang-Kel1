@@ -4,13 +4,13 @@ body {
     margin: 0;
     padding: 0;
     background: linear-gradient(to right, #74ebd5, #acb6e5);
-    color: #333;
+    color: #00008B;
 }
 
 header {
     text-align: center;
     padding: 30px;
-    background: #007bff;
+    background: #00008B;
     color: #fff;
     border-radius: 0 0 20px 20px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -22,8 +22,9 @@ h1 {
 }
 
 h2 {
-    color: #007bff;
+    color: #fff;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 /* Projects Section Styling */
@@ -38,7 +39,7 @@ h2 {
 .project-card {
     flex: 1;
     max-width: 45%;
-    background-color: #f0f9ff;
+    background-color: #fff;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -51,7 +52,7 @@ h2 {
 }
 
 .project-card h3 {
-    color: #007bff;
+    color: #00008b;
     margin-bottom: 15px;
 }
 
@@ -74,7 +75,7 @@ h2 {
 }
 
 button {
-    background-color: #ff6f61;
+    background-color: #00008B;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -84,7 +85,7 @@ button {
 }
 
 button:hover {
-    background-color: #ff8367;
+    background-color: #a9a9ff;
 }
 
 /* Responsive Design */
@@ -107,7 +108,7 @@ button:hover {
 }
 
 #sensor-output {
-    background-color: #fff3e0;
+    background-color: #00008B;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
@@ -119,7 +120,6 @@ button:hover {
 
 /* Centering the Team Table */
 .team-section {
-    display: flex;
     justify-content: center;
     align-items: center;
     height: 400px; /* Adjust as needed */
@@ -143,12 +143,92 @@ button:hover {
 }
 
 .team-table th {
-    background-color: #00bfa5;
+    background-color: #00008B;
     color: #fff;
 }
 
 .team-table tr:hover {
-    background-color: #e0f7fa;
+    background-color: #a9a9ff;
+}
+
+/* Centering the Photo Documentation Table */
+.photo-documentation-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.photo-documentation-table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.photo-documentation-table th, .photo-documentation-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.photo-documentation-table th {
+    background-color: #00008b;
+    color: #fff;
+}
+
+.photo-documentation-table tr:hover {
+    background-color: #a9a9ff;
+}
+
+.photo-documentation-table td {
+    vertical-align: middle;
+}
+
+/* Styling for Photos in the Table */
+.doc-photo {
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .photo-documentation-table {
+        width: 90%;
+    }
+    .doc-photo {
+        max-width: 100px;
+    }
+}
+
+/* Background Image Styling */
+body {
+    background-image: url('44.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Overlay Effect to Enhance Text Visibility */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark transparent overlay */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Behind all content */
 }
 
 
@@ -156,7 +236,7 @@ button:hover {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #007bff;
+    background-color: #00008b;
     color: #fff;
     margin-top: 50px;
     border-radius: 20px 20px 0 0;

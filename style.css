@@ -102,20 +102,19 @@ button:hover {
 
 
 /* Live Sensor Data Styling */
-#live-data-section {
-    text-align: center;
-    margin-top: 50px;
+.thingspeak-charts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
 }
 
-#sensor-output {
-    background-color: #00008B;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-    font-family: monospace;
-    color: #007bff;
-    white-space: pre-wrap;
+.chart-container {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 /* Centering the Team Table */

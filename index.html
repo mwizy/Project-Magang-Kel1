@@ -96,10 +96,30 @@
         </section>
 
 
-        <section id="live-data-section">
-            <h2>Live Sensor Data</h2>
-            <button onclick="connectToSerial()">Connect to Arduino</button>
-            <div id="sensor-output"></div>
+        <section // ... existing head section ...
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+        <!-- Add ThingSpeak library -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.min.js"></script>
+    </head>
+            <section id="live-data-section">
+                <h2>Live Sensor Data</h2>
+                <!-- Replace existing content with ThingSpeak charts -->
+                <div class="thingspeak-charts">
+                    <div class="chart-container">
+                        <h3>Temperature Data</h3>
+                        <iframe width="450" height="260" style="border: 1px solid #cccccc;" 
+                            src="https://api.thingspeak.com/channels/2749102/fields/1.json?results=2"></iframe>
+                        </iframe>
+                    </div>
+                    <div class="chart-container">
+                        <h3>Distance Data</h3>
+                        <iframe width="450" height="260" style="border: 1px solid #cccccc;" 
+                            src="https://api.thingspeak.com/channels/2749102/fields/1.json?results=2"></iframe> 
+                        </iframe>
+                    </div>
+                </div>
+            </section>
         </section>
 
                 <!-- Team Members Table -->
@@ -163,4 +183,3 @@
     <footer>
         <p>&copy; Kelompok 1. All rights reserved.</p>
     </footer>
-

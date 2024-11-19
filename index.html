@@ -146,72 +146,14 @@
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </section>
-
-
-
-
+        
     </main>
 
     <footer>
         <p>&copy; Kelompok 1. All rights reserved.</p>
     </footer>
 
-        <script>
-        function updateDateTime() {
-            const now = new Date();
-            const options = { 
-                weekday: 'long',
-                year: 'numeric', 
-                month: 'long', 
-                day: 'numeric',
-                hour: '2-digit',
-                minute: '2-digit',
-                second: '2-digit'
-            };
-            document.getElementById('datetime').textContent = now.toLocaleString('id-ID', options);
-        }
+    <script src="script.js">
 
-        // Update time immediately and then every second
-        updateDateTime();
-        setInterval(updateDateTime, 1000);
-    </script>
-
-    <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-
-        // Next/previous controls
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        // Thumbnail image controls
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            
-            slides[slideIndex-1].style.display = "block";
-            dots[slideIndex-1].className += " active";
-        }
-
-        // Auto slide every 5 seconds (optional)
-        setInterval(function() {
-            plusSlides(1);
-        },7000);
     </script>
 </body>

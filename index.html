@@ -104,41 +104,40 @@
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.min.js"></script>
     </head>
-            <section id="live-data-section">
-                <h2>Live Sensor Data</h2>
-                <!-- Replace existing content with ThingSpeak charts -->
-                <div class="thingspeak-charts">
-                    <div class="chart-container distance">
-                        <h3>Distance Data (cm)</h3>
-                        <iframe width="450" height="260" style="border: 1px solid #cccccc;" 
-                            src="https://thingspeak.mathworks.com/channels/2749102/widgets/970339?bgcolor=%23ffffff&color=%2300FF00"></iframe>
-                    </div>
-                    <div class="chart-container temperature">
-                        <h3>Temperature Data (°C)</h3>
-                        <iframe width="450" height="260" style="border: 1px solid #cccccc;" 
-                            src="https://thingspeak.mathworks.com/channels/2749102/widgets/970340?bgcolor=%23ffffff&color=%23FF0000"></iframe>
-                    </div>
-                    <div class="chart-container humidity">
-                        <h3>Humidity Data (%rh)</h3>
-                        <iframe width="450" height="260" style="border: 1px solid #cccccc;" 
-                            src="https://thingspeak.mathworks.com/channels/2749102/widgets/970341?bgcolor=%23ffffff&color=%230000FF"></iframe>
-                    </div>
-                </div>
-            </section>
+    <section id="live-data-section">
+        <h2>Live Sensor Data</h2>
+        <div class="thingspeak-charts">
+            <div class="chart-container distance">
+                <h3 class="chart-title">Distance Data (cm)</h3>
+                <iframe width="450" height="260" style="border: 1px solid #cccccc;" 
+                    src="https://thingspeak.mathworks.com/channels/2749102/widgets/970339?bgcolor=%23ffffff&color=%2300FF00"></iframe>
+            </div>
+            <div class="chart-container temperature">
+                <h3 class="chart-title">Temperature Data (°C)</h3>
+                <iframe width="450" height="260" style="border: 1px solid #cccccc;" 
+                    src="https://thingspeak.mathworks.com/channels/2749102/widgets/970340?bgcolor=%23ffffff&color=%23FF0000"></iframe>
+            </div>
+            <div class="chart-container humidity">
+                <h3 class="chart-title">Humidity Data (%rh)</h3>
+                <iframe width="450" height="260" style="border: 1px solid #cccccc;" 
+                    src="https://thingspeak.mathworks.com/channels/2749102/widgets/970341?bgcolor=%23ffffff&color=%230000FF"></iframe>
+            </div>
+        </div>
         </section>
+    </section>
 
                 <!-- Team Members Section -->
         <section class="team-section">
             <h2>Team Members</h2>
             <div class="team-container">
                 <div class="team-member">
-                    <img src="images/fikri.jpg" alt="Fikri Maulana" class="member-img">
+                    <img src="fikri.jpg" alt="Fikri Maulana" class="member-img">
                     <h3>Fikri Maulana</h3>
                     <p>Project Leader</p>
                 </div>
 
                 <div class="team-member">
-                    <img src="images/ahmad.jpg" alt="Ahmad Aqila Nubala" class="member-img">
+                    <img src="aqila.jpg" alt="Ahmad Aqila Nubala" class="member-img">
                     <h3>Ahmad Aqila Nubala</h3>
                     <p>Arduino Developer</p>
                 </div>

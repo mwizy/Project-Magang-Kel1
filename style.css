@@ -99,7 +99,20 @@ button:hover {
         max-width: 80%;
     }
 }
+.datetime-display {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 1.1em;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
 
+#datetime {
+    font-weight: bold;
+    color: #333;
+}
 
 /* Live Sensor Data Styling */
 .thingspeak-charts {

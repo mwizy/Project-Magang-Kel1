@@ -27,7 +27,7 @@
                 <div class="project-card">
                     <h3>Temperature Sensor (DHT11)</h3>
                     <img src="40.jfif" alt="DHT11 Sensor Project" class="project-img">
-                    <p>Uses a DHT11 sensor to measure temperature and humidity. The readings are displayed on the serial monitor.</p>
+                    <p>Uses a DHT11 sensor to measure temperature and humidity.</p>
                     <button onclick="showCode('code1')">View Code</button>
                     <pre id="code1" class="code-snippet">
         #include <DHT.h>
@@ -59,7 +59,6 @@
         }
                     </pre>
                 </div>
-
                 <!-- Project 2: Ultrasonic Sensor (HC-SR04) -->
                 <div class="project-card">
                     <h3>Ultrasonic Sensor (HC-SR04)</h3>
@@ -109,78 +108,99 @@
                 <h2>Live Sensor Data</h2>
                 <!-- Replace existing content with ThingSpeak charts -->
                 <div class="thingspeak-charts">
-                    <div class="chart-container">
+                    <div class="chart-container distance">
                         <h3>Distance Data (cm)</h3>
                         <iframe width="450" height="260" style="border: 1px solid #cccccc;" 
-                            src="https://thingspeak.mathworks.com/channels/2749102/widgets/970339"></iframe>
-                        </iframe>
+                            src="https://thingspeak.mathworks.com/channels/2749102/widgets/970339?bgcolor=%23ffffff&color=%2300FF00"></iframe>
                     </div>
-                    <div class="chart-container">
+                    <div class="chart-container temperature">
                         <h3>Temperature Data (°C)</h3>
                         <iframe width="450" height="260" style="border: 1px solid #cccccc;" 
-                            src="https://thingspeak.mathworks.com/channels/2749102/widgets/970340"></iframe> 
-                        </iframe>
+                            src="https://thingspeak.mathworks.com/channels/2749102/widgets/970340?bgcolor=%23ffffff&color=%23FF0000"></iframe>
                     </div>
-                    <div class="chart-container">
+                    <div class="chart-container humidity">
                         <h3>Humidity Data (%rh)</h3>
                         <iframe width="450" height="260" style="border: 1px solid #cccccc;" 
-                            src="https://thingspeak.mathworks.com/channels/2749102/widgets/970341"></iframe> 
+                            src="https://thingspeak.mathworks.com/channels/2749102/widgets/970341?bgcolor=%23ffffff&color=%230000FF"></iframe>
                     </div>
                 </div>
             </section>
         </section>
 
-                <!-- Team Members Table -->
+                <!-- Team Members Section -->
         <section class="team-section">
             <h2>Team Members</h2>
-            <table class="team-table">
-                <tr>
-                    <th>Name</th>
-                    <th>Role</th>
-                </tr>
-                <tr>
-                    <td>Fikri Maulana</td>
-                    <td>Project Leader</td>
-                </tr>
-                <tr>
-                    <td>Ahmad Aqila Nubala</td>
-                    <td>Arduino Developer</td>
-                </tr>
-                <tr>
-                    <td>Annisa Mulya Amaliyah</td>
-                    <td>Flowchart Developer</td>
-                </tr>
-                <tr>
-                    <td>Indra Kurniawan Cahyadi</td>
-                    <td>Web Developer</td>
-                </tr>
-            </table>
+            <div class="team-container">
+                <div class="team-member">
+                    <img src="images/fikri.jpg" alt="Fikri Maulana" class="member-img">
+                    <h3>Fikri Maulana</h3>
+                    <p>Project Leader</p>
+                </div>
+
+                <div class="team-member">
+                    <img src="images/ahmad.jpg" alt="Ahmad Aqila Nubala" class="member-img">
+                    <h3>Ahmad Aqila Nubala</h3>
+                    <p>Arduino Developer</p>
+                </div>
+
+                <div class="team-member">
+                    <img src="images/annisa.jpg" alt="Annisa Mulya Amaliyah" class="member-img">
+                    <h3>Annisa Mulya Amaliyah</h3>
+                    <p>Flowchart Developer</p>
+                </div>
+
+                <div class="team-member">
+                    <img src="images/indra.jpg" alt="Indra Kurniawan Cahyadi" class="member-img">
+                    <h3>Indra Kurniawan Cahyadi</h3>
+                    <p>Web Developer</p>
+                </div>
+            </div>
         </section>
 
         <section class="photo-documentation-section">
             <h2>Photo Documentation</h2>
-            <table class="photo-documentation-table">
-                <tr>
-                    <th>Date</th>
-                    <th>Description</th>
-                    <th>Photo</th>
-                </tr>
-                <tr>
-                    <td>2024-11-17</td>
-                    <td>Initial setup and wiring of the DHT11 sensor.</td>
-                    <td><img src="images/dht11_setup.jpg" alt="DHT11 Setup" class="doc-photo"></td>
-                </tr>
-                <tr>
-                    <td>2024-11-18</td>
-                    <td>Testing the Ultrasonic sensor.</td>
-                    <td><img src="images/ultrasonic_test.jpg" alt="Ultrasonic Test" class="doc-photo"></td>
-                </tr>
-                <tr>
-                    <td>2024-11-19</td>
-                    <td>Website UI enhancement and live data reading.</td>
-                    <td><img src="images/ui_update.jpg" alt="UI Update" class="doc-photo"></td>
-                </tr>
-            </table>
+            
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+                <!-- Full-width images with caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="images/dht11_setup.jpg" alt="DHT11 Setup">
+                    <div class="caption-text">
+                        <h3>Initial setup and wiring of the DHT11 sensor</h3>
+                        <p>Date: 2024-11-17</p>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="images/ultrasonic_test.jpg" alt="Ultrasonic Test">
+                    <div class="caption-text">
+                        <h3>Testing the Ultrasonic sensor</h3>
+                        <p>Date: 2024-11-18</p>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="images/ui_update.jpg" alt="UI Update">
+                    <div class="caption-text">
+                        <h3>Website UI enhancement and live data reading</h3>
+                        <p>Date: 2024-11-19</p>
+                    </div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <!-- The dots/circles -->
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
         </section>
 
 
@@ -210,5 +230,44 @@
         // Update time immediately and then every second
         updateDateTime();
         setInterval(updateDateTime, 1000);
+    </script>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+
+        // Auto slide every 5 seconds (optional)
+        setInterval(function() {
+            plusSlides(1);
+        }, 5000);
     </script>
 </body>

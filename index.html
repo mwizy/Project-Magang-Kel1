@@ -14,6 +14,9 @@
     <header>
         <h1>Project Magang Kelompok 1</h1>
         <p>Explore my Arduino projects using temperature and motion sensors!</p>
+        <div class="datetime-display">
+            <span id="datetime"></span></p>
+        </div>
     </header>
 
     <main>
@@ -188,3 +191,24 @@
     <footer>
         <p>&copy; Kelompok 1. All rights reserved.</p>
     </footer>
+
+        <script>
+        function updateDateTime() {
+            const now = new Date();
+            const options = { 
+                weekday: 'long',
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            };
+            document.getElementById('datetime').textContent = now.toLocaleString('id-ID', options);
+        }
+
+        // Update time immediately and then every second
+        updateDateTime();
+        setInterval(updateDateTime, 1000);
+    </script>
+</body>

@@ -60,7 +60,7 @@ h2 {
 }
 
 .project-img {
-    object-fit: cover;
+/*     object-fit: cover; */
     display: block;
     margin-left: auto;
     margin-right: auto;

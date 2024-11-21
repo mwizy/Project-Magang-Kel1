@@ -191,4 +191,21 @@
     <script src="script.js">
 
     </script>
+     <script>
+    function downloadThingSpeakData() {
+        // ThingSpeak channel details
+        const channelID = '2749102';
+        // Create the download URL
+        const downloadURL = `https://thingspeak.com/channels/${channelID}/feed.csv`;
+        
+        // Create and click a temporary link
+        const link = document.createElement('a');
+        link.href = downloadURL;
+        link.target = '_blank';
+        link.download = `thingspeak_data_${new Date().toISOString().slice(0,10)}.csv`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+    </script>
 </body>

@@ -185,6 +185,27 @@ button:hover {
     margin: 10px 0;
     padding: 5px;
 }
+/* Download Button */
+.download-section {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 1rem;
+}
+
+.download-btn {
+    background-color: #00008B;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: inherit;
+}
+
+.download-btn:hover {
+    background-color: #a9a9ff;
+}
 
 /* Centering the Team Table */
 .team-section {

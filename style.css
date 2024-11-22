@@ -30,6 +30,16 @@ h2 {
     text-align: center;
 }
 
+.subtitle {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: -10px;  /* Brings it closer to the main title */
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
 /* Navigasi Utama */
 #main-nav {
     background-color: #007bff;
@@ -103,6 +113,10 @@ h2 {
     text-align: center;
 }
 
+.project-card-special button {
+    margin-top: 20px;  /* Adds space above the button */
+    margin-bottom: 10px;  /* Optional: Adds space below the button */
+}
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
@@ -160,7 +174,6 @@ button:hover {
         max-width: 80%;
     }
 }
-
 
 /* Live Sensor Data Styling */
 .thingspeak-charts {

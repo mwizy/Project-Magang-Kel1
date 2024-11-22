@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arduino Sensor Projects</title>
+    <title>Project Kelompok 1</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
@@ -12,10 +12,10 @@
      <!-- Menu Navigasi -->
     <nav id="main-nav">
         <ul>
-            <li><a href="#project-section">Proyek</a></li>
-            <li><a href="#live-data-section">Sensor Live</a></li>
-            <li><a href="#member-section">Anggota</a></li>
-            <li><a href="#documentation-section">Dokumentasi</a></li>
+            <li><a href="#project-section">Projects</a></li>
+            <li><a href="#live-data-section">Live Sensor</a></li>
+            <li><a href="#member-section">Members</a></li>
+            <li><a href="#documentation-section">Documentation</a></li>
 
         </ul>
     </nav>
@@ -24,7 +24,8 @@
     <div class="overlay"></div>
 
     <header>
-        <h1>Project Magang Kelompok 1</h1>
+        <h1>SEDRAH</h1>
+        <h2 class="subtitle">Sensing Distance, Temperature, and Humidity</h2>
         <div class="datetime-display">
             <span id="datetime"></span></p>
         </div>
@@ -46,9 +47,13 @@
                     </a>
                 </div>
                 <div class="project-card-special">
-                    <h3>Rangkaian Skematik</h3>
+                    <h3>Schematic Circuit</h3>
                     <img src="projek kelompok 1 aurora_bb.png" class="project-img">
-                    
+                    <a href="https://github.com/mwizy/Project-Magang-Kel1/blob/main/4_UltrasonicServoDHT11ESP8266.ino" 
+                       target="_blank" 
+                       class="github-link">
+                        <button>View Code</button>
+                    </a>
                 </div>
                 <!-- Project 2: Ultrasonic Sensor (HC-SR04) -->
                 <div class="project-card">
@@ -74,7 +79,7 @@
         <h2>Live Sensor Data</h2>
         <div class="thingspeak-charts">
             <div class="chart-container">
-                <h3 class="chart-title">Distance Data (cm)</h3>
+                <h3 class="chart-title">Distance Data</h3>
                 <iframe width="450" height="260" style="border: 1px solid #cccccc; border-radius: 15px;" src="https://thingspeak.mathworks.com/channels/2749102/widgets/970339?bgcolor=%23ffffff&color=%2300FF00"></iframe>
             </div>
             <div class="chart-container">
@@ -82,7 +87,7 @@
                 <iframe width="450" height="260" style="border: 1px solid #cccccc; border-radius: 15px;" src="https://thingspeak.com/channels/2749102/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Distance&type=line&yaxismax=250&yaxismin=0"></iframe>
             </div>
             <div class="chart-container">
-                <h3 class="chart-title">Temperature Data (°C)</h3>
+                <h3 class="chart-title">Temperature Data</h3>
                 <iframe width="450" height="260" style="border: 1px solid #cccccc; border-radius: 15px;" 
                     src="https://thingspeak.mathworks.com/channels/2749102/widgets/970340?bgcolor=%23ffffff&color=%23FF0000"></iframe>
             </div>
@@ -91,7 +96,7 @@
                 <iframe width="450" height="260" style="border: 1px solid #cccccc; border-radius: 15px;" src="https://thingspeak.com/channels/2749102/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Temperature&type=line&yaxismax=100&yaxismin=0"></iframe>
             </div>
             <div class="chart-container">
-                <h3 class="chart-title">Humidity Data (%rh)</h3>
+                <h3 class="chart-title">Humidity Data</h3>
                 <iframe width="450" height="260" style="border: 1px solid #cccccc; border-radius: 15px;" src="https://thingspeak.mathworks.com/channels/2749102/widgets/970341?bgcolor=%23ffffff&color=%230000FF"></iframe>
             </div>
             <div class="chart-container">
@@ -118,12 +123,13 @@
                     <img src="fikri.jpg" alt="Fikri Maulana" class="member-img">
                     <h3>Fikri Maulana</h3>
                     <p>Project Leader</p>
+                    <p>Arduino Developer</p>
                 </div>
 
                 <div class="team-member">
                     <img src="aqila.jpg" alt="Ahmad Aqila Nubala" class="member-img">
                     <h3>Ahmad Aqila Nubala</h3>
-                    <p>Arduino Developer</p>
+                    <p>Web Developer</p>
                 </div>
 
                 <div class="team-member">
@@ -135,7 +141,7 @@
                 <div class="team-member">
                     <img src="indra.jpg" alt="Indra Kurniawan Cahyadi" class="member-img">
                     <h3>Indra Kurniawan Cahyadi</h3>
-                    <p>Web Developer</p>
+                    <p>Web Engineer</p>
                 </div>
             </div>
         </section>
@@ -161,14 +167,6 @@
                     </div>
                 </div>
 
-                <div class="mySlides fade">
-                    <img src="images/ui_update.jpg" alt="UI Update">
-                    <div class="caption-text">
-                        <h3>Website UI enhancement and live data reading</h3>
-                        <p>Date: 2024-11-19</p>
-                    </div>
-                </div>
-
                 <!-- Next and previous buttons -->
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -178,7 +176,6 @@
             <div class="dot-container">
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </section>
 
